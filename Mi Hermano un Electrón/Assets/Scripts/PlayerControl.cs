@@ -21,7 +21,7 @@ public class PlayerControl : MonoBehaviour {
         else
         { 
             //no hacer nada :v
-            rb.
+            //rb.
         }
         Debug.Log(rb.velocity.x);
 	}

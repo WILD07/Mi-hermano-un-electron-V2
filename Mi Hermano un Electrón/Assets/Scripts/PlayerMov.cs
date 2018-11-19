@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMov : MonoBehaviour {
-    public float moveSpeed = 0.004f;
+    public float moveSpeed = 0.004f;    
     // Use this for initialization
     void Start()
-    {
+    {        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         transform.position = Vector2.Lerp(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition), moveSpeed);
 
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
