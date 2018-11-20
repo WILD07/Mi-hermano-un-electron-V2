@@ -4,7 +4,21 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour {
 
-    public float maxVelocity=3;
+    public float speed;
+    private Rigidbody rb;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+    private void FixedUpdate()
+    {
+        
+        float movVertical = Input.GetAxis("Vertical");
+        Vector3 movimiento = new Vector3(speed, movVertical*8, 0);
+        rb.AddForce(movimiento * speed);
+
+    }
+    /*public float maxVelocity=3;
     Vector3 contantForc;
     Rigidbody rb;
 	void Start () {
@@ -24,5 +38,6 @@ public class PlayerControl : MonoBehaviour {
             //rb.
         }
         Debug.Log(rb.velocity.x);
-	}
+	}*/
+
 }
