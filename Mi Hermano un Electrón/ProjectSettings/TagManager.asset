@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pausa
+  - FxTemporaire
+  - Puerta
   layers:
   - Default
   - TransparentFX
