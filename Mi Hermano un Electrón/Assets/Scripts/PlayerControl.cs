@@ -15,8 +15,7 @@ public class PlayerControl : MonoBehaviour {
         
         float movVertical = Input.GetAxis("Vertical");
         Vector3 movimiento = new Vector3(speed, movVertical*8, 0);
-        rb.AddForce(movimiento * speed);
-
+        rb.AddForce(movimiento * speed);        
     }
     /*public float maxVelocity=3;
     Vector3 contantForc;

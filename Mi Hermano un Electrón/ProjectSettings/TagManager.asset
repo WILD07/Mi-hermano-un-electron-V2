@@ -7,6 +7,7 @@ TagManager:
   - Pausa
   - FxTemporaire
   - Puerta
+  - LlaveFX
   layers:
   - Default
   - TransparentFX

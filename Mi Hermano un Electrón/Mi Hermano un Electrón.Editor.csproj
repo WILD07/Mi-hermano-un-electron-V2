@@ -365,14 +365,6 @@
       <Project>{DBBBCC9D-98B5-7F93-FBC1-3F1E743C5335}</Project>
       <Name>Mi Hermano un Electrón</Name>
     </ProjectReference>
-    <ProjectReference Include="Mi Hermano un Electrón.Plugins.csproj">
-      <Project>{BCCFC774-679F-0C60-A670-2FB41A34EA73}</Project>
-      <Name>Mi Hermano un Electrón.Plugins</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mi Hermano un Electrón.Editor.Plugins.csproj">
-      <Project>{80D78B85-74B7-3248-16C2-BF30FC1E6F89}</Project>
-      <Name>Mi Hermano un Electrón.Editor.Plugins</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Packages\com.unity.standardevents\Editor\Importer.cs" />
@@ -384,8 +376,6 @@
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\Alert.uxml" />

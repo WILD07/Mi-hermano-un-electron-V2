@@ -99,9 +99,6 @@ C:/Users/usuario/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity
 C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
 E:\UNITY\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
 E:\UNITY\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
-E:/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll
-E:/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
-E:/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
 E:\UNITY\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll
 E:\UNITY\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll
 E:\UNITY\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll
@@ -111,3 +108,6 @@ E:\UNITY\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll
 E:\UNITY\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll
 E:\UNITY\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll
 E:\UNITY\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll
+E:/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll
+E:/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
+E:/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll

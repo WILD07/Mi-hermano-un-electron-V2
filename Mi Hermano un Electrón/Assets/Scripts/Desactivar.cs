@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Desactivar : MonoBehaviour {
     public new Collider collider;
-    public GameObject Puerta;   
-
+    public GameObject Puerta;
+    public AudioClip llaveFX;
+    
+    AudioSource FuentedeAudio;
+        
     // Use this for initialization
     void Start()
     {
-        Puerta = GameObject.Find("Puerta");        
+        Puerta = GameObject.Find("Puerta");
+        
     }
 
     // Update is called once per frame
@@ -22,6 +26,7 @@ public class Desactivar : MonoBehaviour {
         if (collision.tag == "Player")
         {
             Puerta.SetActive(false);
+            
         }
     }
 }
