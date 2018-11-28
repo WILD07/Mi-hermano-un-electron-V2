@@ -9,7 +9,7 @@ public class PantallaCarga : MonoBehaviour {
     public Transform BarraEspera;
     public Transform TextProgreso;
     public Transform TextCargando;
-    public string sceneToLoad;
+    public string sceneToLoad;    
     [SerializeField] private float currentAmount;
     [SerializeField] private float speed;
 	// Use this for initialization
@@ -31,6 +31,7 @@ public class PantallaCarga : MonoBehaviour {
             TextCargando.gameObject.SetActive(false);
             TextProgreso.GetComponent<Text>().text = "Listo!";
             SceneManager.LoadScene(sceneToLoad);
+            
         }
         BarraEspera.GetComponent<Image>().fillAmount = currentAmount / 100;
 	}

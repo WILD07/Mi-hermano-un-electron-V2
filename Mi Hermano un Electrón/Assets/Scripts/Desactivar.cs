@@ -5,7 +5,7 @@ using UnityEngine;
 public class Desactivar : MonoBehaviour {
     public new Collider collider;
     public GameObject Puerta;
-    public AudioClip llaveFX;
+    public AudioSource llaveFX;    
     
     AudioSource FuentedeAudio;
         
@@ -26,7 +26,7 @@ public class Desactivar : MonoBehaviour {
         if (collision.tag == "Player")
         {
             Puerta.SetActive(false);
-            
+            llaveFX.Play();
         }
     }
 }

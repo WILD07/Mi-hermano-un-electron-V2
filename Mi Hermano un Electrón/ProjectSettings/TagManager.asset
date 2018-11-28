@@ -8,6 +8,8 @@ TagManager:
   - FxTemporaire
   - Puerta
   - LlaveFX
+  - Positron
+  - Punto
   layers:
   - Default
   - TransparentFX

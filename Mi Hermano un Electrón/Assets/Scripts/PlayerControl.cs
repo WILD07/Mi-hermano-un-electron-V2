@@ -6,9 +6,11 @@ public class PlayerControl : MonoBehaviour {
 
     public float speed;
     private Rigidbody rb;
+    //Animator ani;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        //ani = GetComponent<Animator>();
     }
     private void FixedUpdate()
     {
@@ -38,5 +40,14 @@ public class PlayerControl : MonoBehaviour {
         }
         Debug.Log(rb.velocity.x);
 	}*/
-
+    /*void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.transform.tag);
+        if (other.gameObject.CompareTag("Positron"))
+        {
+            ani.SetBool("Muerte", true);
+            //Destroy(other.gameObject);
+            Debug.Log("activado" + ani);
+        }
+    }*/
 }

@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 23912667570387818}
   - component: {fileID: 95411467836399918}
   m_Layer: 0
-  m_Name: Electron
+  m_Name: Magnetismo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

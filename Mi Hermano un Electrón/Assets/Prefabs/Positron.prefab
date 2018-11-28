@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4053906573728888}
   - component: {fileID: 95115511888466808}
   - component: {fileID: 82294721081016230}
+  - component: {fileID: 135128872000481002}
+  - component: {fileID: 114688694085097468}
   m_Layer: 0
   m_Name: Positron
-  m_TagString: Untagged
+  m_TagString: Positron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,8 +348,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1008197290214308}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2625103, y: -0.048876047, z: 0.23000002}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -35.168137, y: -14.807806, z: 1.4560766}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4872885183787770}
@@ -689,7 +691,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 93ec604066e8131428ff00faa0ecb48f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.52
+  m_Volume: 0.27
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -803,6 +805,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnlyDeactivate: 0
+--- !u!114 &114688694085097468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1008197290214308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d154152ecc7874680bcfc3266d16f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &135128872000481002
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1008197290214308}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.312837
+  m_Center: {x: 0, y: -0.057051778, z: 0}
 --- !u!137 &137600905451507434
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
