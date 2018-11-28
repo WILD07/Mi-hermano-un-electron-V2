@@ -4,20 +4,22 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour {
 
+    float movVertical;
     public float speed;
-    private Rigidbody rb;
-    //Animator ani;
+    public float velocidad = 1f;
+    private Rigidbody rb;    
+    Animator ani;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //ani = GetComponent<Animator>();
+        ani = GetComponent<Animator>();        
     }
     private void FixedUpdate()
     {
-        
-        float movVertical = Input.GetAxis("Vertical");
+        movVertical = Input.GetAxis("Vertical");
+        GetComponent<Rigidbody>().velocity = new Vector3(velocidad, movVertical * 8,0);        
         Vector3 movimiento = new Vector3(speed, movVertical*8, 0);
-        rb.AddForce(movimiento * speed);        
+        //rb.AddForce(movimiento * speed);        
     }
     /*public float maxVelocity=3;
     Vector3 contantForc;
@@ -40,14 +42,18 @@ public class PlayerControl : MonoBehaviour {
         }
         Debug.Log(rb.velocity.x);
 	}*/
-    /*void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.transform.tag);
         if (other.gameObject.CompareTag("Positron"))
         {
-            ani.SetBool("Muerte", true);
+            
+            //Vector3 movimiento = new Vector3(0, 0, 0);
+            velocidad = 0;
+            speed = 0;            
+            ani.SetBool("Muerte", true);            
             //Destroy(other.gameObject);
-            Debug.Log("activado" + ani);
+            //Debug.Log("activado" + ani);
         }
-    }*/
+    }
 }
