@@ -14,8 +14,7 @@ public class PantallaCarga : MonoBehaviour {
     [SerializeField] private float speed;
 	// Use this for initialization
 	void Start () {
-		
-	}
+        currentAmount = 0;	}
 	
 	// Update is called once per frame
 	void Update ()

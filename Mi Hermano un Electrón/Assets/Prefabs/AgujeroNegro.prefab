@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 82907351618574816}
   m_Layer: 0
   m_Name: AgujeroNegro
-  m_TagString: Untagged
+  m_TagString: AgujeroN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +146,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374406127170858}
   m_LocalRotation: {x: -0.7811626, y: 0.10284198, z: 0.08037788, w: 0.6105308}
-  m_LocalPosition: {x: 75.05, y: 11.3, z: 1.38}
+  m_LocalPosition: {x: 2.8491642, y: 4.3070326, z: 1.38}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 4689707865605164}
@@ -498,10 +498,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.009359284
+  m_Radius: 0.0037253955
   m_Height: 0.051951442
   m_Direction: 2
-  m_Center: {x: 0.0009997486, y: -0.00000001427085, z: 0.0017610979}
+  m_Center: {x: 0, y: -0.000000014296269, z: 0.0017610979}
 --- !u!198 &198211231133907122
 ParticleSystem:
   m_ObjectHideFlags: 1

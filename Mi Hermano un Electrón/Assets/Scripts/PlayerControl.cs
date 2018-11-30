@@ -1,14 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour {
 
+    public GameObject Fade;
+    public GameObject Elec;
+    public GameObject Skull;
     float movVertical;
     public float speed;
     public float velocidad = 1f;
     private Rigidbody rb;    
     Animator ani;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -51,9 +57,34 @@ public class PlayerControl : MonoBehaviour {
             //Vector3 movimiento = new Vector3(0, 0, 0);
             velocidad = 0;
             speed = 0;            
-            ani.SetBool("Muerte", true);            
+            ani.SetBool("Muerte", true);
+            Elec.SetActive(true);
+            
             //Destroy(other.gameObject);
             //Debug.Log("activado" + ani);
+            StartCoroutine(Retardo());
         }
+        if (other.gameObject.CompareTag("AgujeroN"))
+        {            
+            velocidad = 0;
+            speed = 0;
+            ani.SetBool("Torn", true);            
+            StartCoroutine(Retardo());
+        }
+        if (other.gameObject.CompareTag("GasVenesnoso"))
+        {
+            velocidad = 0;
+            speed = 0;
+            Skull.SetActive(true);
+            StartCoroutine(Retardo());
+        }
+
+    }
+    IEnumerator Retardo()
+    {
+        yield return new WaitForSeconds(1f);
+        Fade.SetActive(true);
+        yield return new WaitForSeconds(1.2f);        
+        SceneManager.LoadScene("SampleScene");
     }
 }
