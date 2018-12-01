@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class PantallaCarga : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class PantallaCarga : MonoBehaviour {
     [SerializeField] private float speed;
 	// Use this for initialization
 	void Start () {
+        Time.timeScale = 1;
         currentAmount = 0;	}
 	
 	// Update is called once per frame

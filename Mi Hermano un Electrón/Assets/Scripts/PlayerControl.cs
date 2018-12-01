@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour {
-
+    
+    public AudioSource ElecSound;
     public GameObject Fade;
     public GameObject Elec;
     public GameObject Skull;
@@ -13,18 +15,19 @@ public class PlayerControl : MonoBehaviour {
     public float speed;
     public float velocidad = 1f;
     private Rigidbody rb;    
-    Animator ani;
+    Animator ani;   
 
     private void Start()
     {
+        Time.timeScale = 1;
         rb = GetComponent<Rigidbody>();
         ani = GetComponent<Animator>();        
     }
     private void FixedUpdate()
     {
-        movVertical = Input.GetAxis("Vertical");
+        movVertical = CrossPlatformInputManager.GetAxis("Vertical");
         GetComponent<Rigidbody>().velocity = new Vector3(velocidad, movVertical * 8,0);        
-        Vector3 movimiento = new Vector3(speed, movVertical*8, 0);
+        //Vector3 movimiento = new Vector3(speed, movVertical*8, 0);
         //rb.AddForce(movimiento * speed);        
     }
     /*public float maxVelocity=3;
@@ -59,7 +62,7 @@ public class PlayerControl : MonoBehaviour {
             speed = 0;            
             ani.SetBool("Muerte", true);
             Elec.SetActive(true);
-            
+            ElecSound.Play();
             //Destroy(other.gameObject);
             //Debug.Log("activado" + ani);
             StartCoroutine(Retardo());
@@ -78,8 +81,13 @@ public class PlayerControl : MonoBehaviour {
             Skull.SetActive(true);
             StartCoroutine(Retardo());
         }
+        if (other.gameObject.CompareTag("Punto"))
+        {
+            velocidad += 0.2f;
+            Debug.Log(velocidad);
+        }
 
-    }
+    }   
     IEnumerator Retardo()
     {
         yield return new WaitForSeconds(1f);

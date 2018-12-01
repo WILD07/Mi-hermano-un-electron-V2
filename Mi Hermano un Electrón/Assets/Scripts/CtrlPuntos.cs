@@ -9,7 +9,7 @@ public class CtrlPuntos : MonoBehaviour {
         Vanish,
         Fly
     }
-
+    public AudioSource PuntoSound;
     public PuntoFX puntoFX;
     public float speed;
     public bool startFlying;
@@ -47,7 +47,7 @@ public class CtrlPuntos : MonoBehaviour {
                 startFlying = true;
             }
             Puntos.instance.ConteoPuntos();
-
+            PuntoSound.Play();
 
         }
     }
