@@ -260,6 +260,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114646207738208618, guid: 114208e62333acc49b12786273b442bf,
+        type: 2}
+      propertyPath: sceneToLoad
+      value: VideoTutorial
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 114208e62333acc49b12786273b442bf, type: 2}
   m_IsPrefabAsset: 0

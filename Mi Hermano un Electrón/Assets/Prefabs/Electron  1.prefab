@@ -1053,6 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b912d68cc6de27948b1233be12e65372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scena: SampleScene
   ElecSound: {fileID: 0}
   Fade: {fileID: 0}
   Elec: {fileID: 1872679038324974}

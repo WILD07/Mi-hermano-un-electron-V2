@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\administradorBotones.cs" />
     <Compile Include="Assets\Scripts\AreaSound.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
+    <Compile Include="Assets\Scripts\Carga1.cs" />
     <Compile Include="Assets\Scripts\Colector.cs" />
     <Compile Include="Assets\Scripts\CtrlPuntos.cs" />
     <Compile Include="Assets\Scripts\Desactivar.cs" />

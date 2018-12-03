@@ -12,6 +12,7 @@ TagManager:
   - Punto
   - AgujeroN
   - GasVenesnoso
+  - PuntoLlegada1
   layers:
   - Default
   - TransparentFX

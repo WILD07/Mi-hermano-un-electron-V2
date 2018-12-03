@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UIControl : MonoBehaviour {
     public GameObject pause;
+    public string SceneReniciar;
     
 	// Use this for initialization
 	void Start () {
@@ -28,7 +29,7 @@ public class UIControl : MonoBehaviour {
     public void Reniciar()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(SceneReniciar);
     }
     public void Pause()
     {

@@ -6,7 +6,9 @@ using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour {
-    
+
+    public string Scena;
+
     public AudioSource ElecSound;
     public GameObject Fade;
     public GameObject Elec;
@@ -84,7 +86,11 @@ public class PlayerControl : MonoBehaviour {
         if (other.gameObject.CompareTag("Punto"))
         {
             velocidad += 0.2f;
-            Debug.Log(velocidad);
+            //Debug.Log(velocidad);
+        }
+        if (other.gameObject.CompareTag("PuntoLlegada1"))
+        {
+            StartCoroutine(Retardo2());
         }
 
     }   
@@ -93,6 +99,13 @@ public class PlayerControl : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         Fade.SetActive(true);
         yield return new WaitForSeconds(1.2f);        
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(Scena);
+    }
+    IEnumerator Retardo2()
+    {
+        velocidad = 0;
+        Fade.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
+        SceneManager.LoadScene("PantallaCarga2");
     }
 }
