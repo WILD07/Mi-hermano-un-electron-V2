@@ -7,10 +7,11 @@ using UnityStandardAssets.CrossPlatformInput;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour {
 
-    public string Scena;
-
+    public string Scena;    
     public AudioSource ElecSound;
     public GameObject Fade;
+    public GameObject Creditos;
+    public GameObject Control;
     public GameObject Elec;
     public GameObject Skull;
     float movVertical;
@@ -23,7 +24,10 @@ public class PlayerControl : MonoBehaviour {
     {
         Time.timeScale = 1;
         rb = GetComponent<Rigidbody>();
-        ani = GetComponent<Animator>();        
+        ani = GetComponent<Animator>();
+        Control.SetActive(true);
+        speed = 1;
+        velocidad = 4;
     }
     private void FixedUpdate()
     {
@@ -91,6 +95,13 @@ public class PlayerControl : MonoBehaviour {
         if (other.gameObject.CompareTag("PuntoLlegada1"))
         {
             StartCoroutine(Retardo2());
+        }
+        if (other.gameObject.CompareTag("Fin"))
+        {
+            velocidad = 0;
+            speed = 0;
+            Control.SetActive(false);
+            Creditos.SetActive(true);
         }
 
     }   

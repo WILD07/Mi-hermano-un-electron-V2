@@ -263,7 +263,7 @@ Prefab:
     - target: {fileID: 114646207738208618, guid: 114208e62333acc49b12786273b442bf,
         type: 2}
       propertyPath: sceneToLoad
-      value: VideoTutorial
+      value: SampleScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 114208e62333acc49b12786273b442bf, type: 2}

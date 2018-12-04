@@ -22,6 +22,6 @@ public class Menu : MonoBehaviour {
     }
     public void ClicInstrucciones()
     {
-        Instrucciones.SetActive(true);
+        SceneManager.LoadScene("VideoTutorial");
     }
 }
