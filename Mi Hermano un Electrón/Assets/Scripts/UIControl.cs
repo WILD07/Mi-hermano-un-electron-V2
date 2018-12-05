@@ -44,4 +44,30 @@ public class UIControl : MonoBehaviour {
             pause.SetActive(false);
         }
     }
+    public void Carga()
+    {
+        if (Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            pause.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            pause.SetActive(false);
+        }
+    }
+    public void Guarda()
+    {
+        if (Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            pause.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            pause.SetActive(false);
+        }
+    }
 }

@@ -6,10 +6,10 @@ public class Puntos : MonoBehaviour {
 
     public Text txtPunto;
 
-    int conteoPuntos;
+    public int conteoPuntos;
 
     public static Puntos instance;
-
+    Point datos;
     void Awake()
     {
         if (instance == null)
@@ -18,17 +18,21 @@ public class Puntos : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     public void ConteoPuntos()
     {
+        
         conteoPuntos++;
-        txtPunto.text = "X " + conteoPuntos;
+        
+        MenuGuardar.instance.puntosTexto.text = "X " + conteoPuntos;       
+
+        //txtPunto.text = "X " + conteoPuntos;
     }
 }

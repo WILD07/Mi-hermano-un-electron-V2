@@ -24,7 +24,7 @@ public class Carga1 : MonoBehaviour {
     }
     IEnumerator Retardo()
     {
-        yield return new WaitForSeconds(39f);        
+        yield return new WaitForSeconds(40f);        
         SceneManager.LoadScene(sceneToLoad);
     }
 }
