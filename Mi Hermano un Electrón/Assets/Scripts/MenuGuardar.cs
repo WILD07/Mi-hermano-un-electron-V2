@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class MenuGuardar : MonoBehaviour {
 
     public Vector3 PosPlayer;
-    public Text puntosTexto;
-    Point datos;
+    
     public static MenuGuardar instance;
     // Use this for initialization
     void Awake()
@@ -29,17 +28,11 @@ public class MenuGuardar : MonoBehaviour {
         
     public void Guardar()
     {
-        SysGuardar.Guardar_Posicion(PosPlayer);
-        datos = new Point(Puntos.instance.conteoPuntos);
-        SaveLoad.Save(datos);
+        SysGuardar.Guardar_Posicion(PosPlayer);        
     }
     public void Cargar()
     {
         GameObject.FindGameObjectWithTag("Player").transform.position = SysGuardar.Cargar_Posicion();
-        SaveLoad.Load();
-        foreach (Point aux in SaveLoad.savedGames)
-        {
-            puntosTexto.text = "X" + aux.puntos;
-        }
+        SaveLoad.Load();        
     } 
 }

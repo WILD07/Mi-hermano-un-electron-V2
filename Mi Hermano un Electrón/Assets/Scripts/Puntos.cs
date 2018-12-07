@@ -8,8 +8,7 @@ public class Puntos : MonoBehaviour {
 
     public int conteoPuntos;
 
-    public static Puntos instance;
-    Point datos;
+    public static Puntos instance;    
     void Awake()
     {
         if (instance == null)
@@ -29,10 +28,8 @@ public class Puntos : MonoBehaviour {
     public void ConteoPuntos()
     {
         
-        conteoPuntos++;
-        
-        MenuGuardar.instance.puntosTexto.text = "X " + conteoPuntos;       
+        conteoPuntos++;         
 
-        //txtPunto.text = "X " + conteoPuntos;
+        txtPunto.text = "X " + conteoPuntos;
     }
 }

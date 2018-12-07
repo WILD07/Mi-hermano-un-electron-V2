@@ -59,7 +59,7 @@ public class PlayerControl : MonoBehaviour {
 	}*/
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.transform.tag);
+        //Debug.Log(other.transform.tag);
         if (other.gameObject.CompareTag("Positron"))
         {
             
@@ -69,23 +69,25 @@ public class PlayerControl : MonoBehaviour {
             ani.SetBool("Muerte", true);
             Elec.SetActive(true);
             ElecSound.Play();
+            Destroy(other.gameObject);
             //Destroy(other.gameObject);
             //Debug.Log("activado" + ani);
-            StartCoroutine(Retardo());
+            StartCoroutine(Retardo3());
+            //Debug.Log(Retardo3());
         }
         if (other.gameObject.CompareTag("AgujeroN"))
         {            
             velocidad = 0;
             speed = 0;
             ani.SetBool("Torn", true);            
-            StartCoroutine(Retardo());
+            StartCoroutine(Retardo4());
         }
         if (other.gameObject.CompareTag("GasVenesnoso"))
         {
             velocidad = 0;
             speed = 0;
             Skull.SetActive(true);
-            StartCoroutine(Retardo());
+            StartCoroutine(Retardo5());
         }
         if (other.gameObject.CompareTag("Punto"))
         {
@@ -118,5 +120,44 @@ public class PlayerControl : MonoBehaviour {
         Fade.SetActive(true);
         yield return new WaitForSeconds(1.2f);
         SceneManager.LoadScene("PantallaCarga2");
+    }
+    IEnumerator Retardo3()
+    {
+        yield return new WaitForSeconds(1f);
+        Fade.SetActive(true);        
+        yield return new WaitForSeconds(1.2f);
+        velocidad = 4;
+        speed = 1;
+        ani.SetBool("Muerte", false);
+        ani.SetBool("Torn", false);
+        Elec.SetActive(false);
+        Skull.SetActive(false);
+        Fade.SetActive(false);
+        ElecSound.Stop();
+        MenuGuardar.instance.Cargar();
+        
+    }
+    IEnumerator Retardo4()
+    {
+        yield return new WaitForSeconds(1f);
+        Fade.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
+        velocidad = 4;
+        speed = 1;        
+        ani.SetBool("Torn", false);
+        Fade.SetActive(false);
+        MenuGuardar.instance.Cargar();
+    }
+    IEnumerator Retardo5()
+    {
+        yield return new WaitForSeconds(1f);
+        Fade.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
+        velocidad = 4;
+        speed = 1;        
+        Skull.SetActive(false);
+        Fade.SetActive(false);
+        MenuGuardar.instance.Cargar();
+
     }
 }

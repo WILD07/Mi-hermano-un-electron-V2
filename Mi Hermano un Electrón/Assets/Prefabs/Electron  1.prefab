@@ -1056,6 +1056,8 @@ MonoBehaviour:
   Scena: SampleScene
   ElecSound: {fileID: 0}
   Fade: {fileID: 0}
+  Creditos: {fileID: 0}
+  Control: {fileID: 0}
   Elec: {fileID: 1872679038324974}
   Skull: {fileID: 1020869246091450}
   speed: 1

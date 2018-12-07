@@ -354,6 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtPunto: {fileID: 114850029638226620}
+  conteoPuntos: 0
 --- !u!114 &114006755882733026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -932,7 +933,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'X '
+  m_Text: X 0
 --- !u!114 &114882225901111024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1319,7 +1320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5, y: 64}
+  m_AnchoredPosition: {x: 1.5, y: 66.99999}
   m_SizeDelta: {x: 253.6, y: 86.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224454182639890732
@@ -1338,7 +1339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5000001, y: -84}
+  m_AnchoredPosition: {x: 1.5000001, y: -80}
   m_SizeDelta: {x: 253.6, y: 86.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224471338474647462
@@ -1458,7 +1459,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5000001, y: -10}
+  m_AnchoredPosition: {x: 1.5000001, y: -6.9999924}
   m_SizeDelta: {x: 253.6, y: 86.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224914220651846366
